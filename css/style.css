@@ -1,9 +1,199 @@
-body {
-    text-align: center;
-    align-items: center;
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Black.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal; 
 }
-
-h1 {
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/RobotoSlab-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: Lato;
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    padding: 15px 0px;
+}
+.navigation {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.navigation-link {
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #939699;
+}
+.button {
+    padding: 10px 20px;
+    background: #4592FF;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.button-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+.slide {
+    padding: 90px 0px 110px 0px;
+}
+.slide-1 {
+    background: #B4D1E0 url(../img/slide-img-1.png) no-repeat top right 37%;
+}
+.label {
+    background: #3DC47E;
+    border-radius: 3px;
+    padding: 5px 12px;
+    color: white;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+.slide-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     font-size: 55px;
-    color: red;
+    line-height: 70px;
+    color: #262D33;
+    margin: 20px 0px 15px 0px;
+}
+.slide-description {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4B5157;
+    max-width: 335px;
+    margin-bottom: 40px;
+}
+.slider {
+    position: relative;
+}
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.slider-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.card .button .button-text {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.card {
+    min-height: 370px;
+    border-radius: 10px;
+    padding: 60px 46px 80px 46px;
+}
+.card-1 {
+    background: #E2E1E1 url(../img/card-1-img.jpg) no-repeat right;
+    background-size: cover;
+}
+.card-2 {
+    background: url(../img/card-2-img.jpg) no-repeat right;
+    background-size: cover;
+}
+.card-3 {
+    padding-top: 35px;
+    background: #CCD5E6 url(../img/card-3-img.png) no-repeat top right 10%;
+    background-size: contain;
+}
+.card-4 {
+    padding: 60px 0px 0px 25px;
+    background: #FF4F52 url(../img/card-4-img.png) no-repeat top right;
+    background-size: contain;
+}
+.card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #262D33;
+    max-width: 222px;
+    margin: 0px;
+}
+.card-text {
+    max-width: 176px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+    margin-bottom: 25px;
+}
+.card-2 .card-text,
+.card-2 .card-title {
+    color: #fff;
+}
+.card-3 .card-title {
+    font-size: 40px;
+    line-height: 50px;
+    color: #262D33;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 420px;
+}
+.card-3 .card-text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 320px;
+}
+.card-3 .button .button-price {
+    margin-right: 10px;
+}
+.card-4 .card-title {
+    font-size: 25px;
+    line-height: 30px;
+}
+.card-4 .card-text {
+    color: #FFC4C9;
+}
+.card-4 .card-price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+}
+.card-4 .card-title,
+.card-4 .card-price {
+    color: #fff;
 }
